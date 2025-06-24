@@ -166,3 +166,50 @@ a.secondary {
     filter: invert();
   }
 }
+
+/*** CSS PAGE D'ACCEUIL***/
+
+.hero {
+  position: relative;
+  background-image: url('/imgs/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1{
+  font-weight: 600;
+  font-size: 6.5em;
+}
+
+.hero h2{
+  font-weight: 600;
+  font-size: 5.3em;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.2); /* blanc à 30% */
+}
+
+/*** Responsive ***/
+
+@media (max-width: 768px) {
+  .titre{
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titre{
+    font-size: 1.5rem;
+  }
+}
