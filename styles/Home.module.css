@@ -170,7 +170,7 @@ a.secondary {
 /*** CSS PAGE D'ACCEUIL***/
 
 .hero {
-  position: relative;
+  
   background-image: url('/imgs/hero-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -192,13 +192,10 @@ a.secondary {
   font-size: 5.3em;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(255, 255, 255, 0.2); /* blanc à 30% */
-}
 
+.SousTitle{
+  color: #1a1a1a;
+}
 /*** Responsive ***/
 
 @media (max-width: 768px) {

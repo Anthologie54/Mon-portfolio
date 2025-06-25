@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '@/styles/globals.css'; // Garde ceci si tu as un fichier global
 import Navbar from '../components/Navbar';
-import '@/styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
