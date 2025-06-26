@@ -1,3 +1,4 @@
+
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
@@ -108,6 +109,9 @@ a.secondary {
   flex-shrink: 0;
 }
 
+.barre{
+  margin: 30px;
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
@@ -191,10 +195,32 @@ a.secondary {
   font-weight: 600;
   font-size: 5.3em;
 }
-
-
 .SousTitle{
+  border-bottom: solid 4px blue ;
+  font-weight: 800;
+  padding: 20px 0px;
+  margin-bottom: 50px;
+}
+.articles{
   color: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 70%;
+  padding: 50px;
+  box-shadow: 2px 2px 3px px #f3f3f3;
+  gap: 20px;
+}
+ .articles section{
+  flex-basis: 50%;
+ }
+.label{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+.ImageJohneDoe{
+  margin-bottom: 20px;
 }
 /*** Responsive ***/
 
