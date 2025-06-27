@@ -9,12 +9,17 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
-  
 }
-
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+strong {
+  font-weight: 600;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,7 +30,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
 .navbar-nav .nav-link:hover {
   color: white;      
   font-weight: 600;             
@@ -37,6 +45,8 @@ a {
 .progress{
   margin: 10px 0px 30px 0px;
 }
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

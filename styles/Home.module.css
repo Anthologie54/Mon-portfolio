@@ -205,11 +205,11 @@ a.secondary {
   color: #1a1a1a;
   display: flex;
   flex-direction: row;
-  margin: auto;
-  width: 70%;
+  margin: 30px auto;
+  width: 65%;
   padding: 50px;
-  box-shadow: 2px 2px 3px px #f3f3f3;
-  gap: 20px;
+  box-shadow: 2px 2px 3px 3px #e0dfdf;
+  gap: 40px;
 }
  .articles section{
   flex-basis: 50%;
@@ -219,8 +219,15 @@ a.secondary {
   flex-direction: row;
   margin-bottom: 0;
 }
-.ImageJohneDoe{
-  margin-bottom: 20px;
+.TextDescription{
+  margin-top: 20px;
+}
+
+.InfoGitHub{
+  justify-items: center;
+  align-content: center;
+  margin: 0;
+  font-size: large;
 }
 /*** Responsive ***/
 

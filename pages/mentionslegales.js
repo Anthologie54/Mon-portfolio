@@ -1,4 +1,4 @@
-export default function MentionLegales() {
+export default function mentionslegales() {
     return (
         <main>
             <h1>Mention légal</h1>

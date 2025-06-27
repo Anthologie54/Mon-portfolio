@@ -27,100 +27,125 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body>
-        <header>
-          <div className={styles.hero}>
+      <header>
+        <div className={styles.hero}>
 
-            <h1> Bonjour je suis John Doe</h1>
-            <h2>Développeur Web full stack</h2>
+          <h1> Bonjour je suis John Doe</h1>
+          <h2>Développeur Web full stack</h2>
 
-            <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal" >En savoir plus</button>
-          </div>
-          {/* Modal pour le bouton */}
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Profil Github</h1>
-                  <button
-                    type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#githubModal" >En savoir plus</button>
+        </div>
+        {/* Modal GitHub */}
+        <div className="modal fade" id="githubModal" tabIndex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
+          <div className="modal-dialog modal-dialog-centered modal-lg">
+            <div className="modal-content bg-dark text-white">
+              <div className="modal-header border-secondary">
+                <h1 className="modal-title" id="githubModalLabel">Mon profil GitHub</h1>
+                <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+              </div>
+
+              <div className="modal-body d-flex gap-4">
+                <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="avatar GitHub" className="img-thumbnail" width="300" style={{ flexShrink: 0 }} />
+
+                <div className="d-flex flex-column justify-content-start">
+                  <p>
+                    <i className="bi bi-person me-2"></i>
+                    <a href="https://github.com/github-johndoe" className="text-primary text-decoration-underline" target="_blank" rel="noreferrer">John Doe</a>
+                  </p>
+                  <hr className="border-secondary" />
+
+                  <p>
+                    <i className="bi bi-geo-alt me-2"></i>
+                    Aucune localisation
+                  </p>
+                  <hr className="border-secondary" />
+
+                  <p>
+                    <i className="bi bi-card-text me-2"></i>
+                    As we all know, John Doe's identity is unknown. I just wanted to contribute without being known.
+                  </p>
+                  <hr className="border-secondary" />
+
+                  <p>
+                    <i className="bi bi-box me-2"></i>
+                    Repositories : 1
+                  </p>
+                  <hr className="border-secondary" />
+
+                  <p>
+                    <i className="bi bi-people me-2"></i>
+                    Followers : 16
+                  </p>
+                  <hr className="border-secondary" />
+
+                  <p>
+                    <i className="bi bi-person-check me-2"></i>
+                    Following : 0
+                  </p>
                 </div>
+              </div>
 
-                <div class="modal-body">
-                  {userData ? (
-                    <>
-                      <img src={userData.avatar_url} alt="avatar" class="img-thumbnail mb-3" width="100" />
-
-                      <p><strong>Nom d'utilisateur :</strong> {userData.login}</p>
-                      <p><strong>Bio :</strong> {userData.bio || "Aucune bio disponible"}</p>
-                      <p><strong>Repos publics :</strong> {userData.public_repos}</p>
-                      <p><strong>Followers :</strong> {userData.followers}</p>
-                      <a href={userData.html_url} target="_blank" rel="noreferrer"> Voir le profil complet</a>
-                    </>
-                  ) : (
-                    <div class="d-flex align-items-center">
-                      <strong class="me-2">Chargement...</strong>
-                      <div class="spinner-border text-primary" role="status" aria-hidden="true"></div>
-                    </div>
-                  )}
-                </div>
-
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+              <div className="modal-footer bg-dark text-white">
+                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
+                  Fermer
+                </button>
               </div>
             </div>
           </div>
-        </header>
+        </div>
+      </header>
 
-        <main className={styles.articles}>
-          <section>
+      <main className={styles.articles}>
+        <section>
 
-            <h3 className={styles.SousTitle}>A propos</h3>
+          <h3 className={styles.SousTitle}>A propos</h3>
 
-            <img className={styles.ImageJohneDoe} src=" /imgs/john-doe-about.jpg" alt="John Doe qui travaille" with="200px" />
+          <img src=" /imgs/john-doe-about.jpg" alt="John Doe qui travaille" className="img-fluid object-fit-cover w-100" />
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </section>
-          <section className={styles.competence}>
+          <p className={styles.TextDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section>
+        <section className={styles.competence}>
 
-            <h3 className={styles.SousTitle}>Mes compétence</h3>
-            
-              <label className={styles.label}>HTML5 90%</label>
-            <div className="progress" role="progressbar" aria-label="Danger example" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100}>
-              <div className="progress-bar bg-danger marge-progess-bar" style={{ width: '90%' }}></div>
-            </div>
-              <label className={styles.label}>CSS 80%</label>
-            <div className="progress" role="progressbar" aria-label="Info example" aria-valuenow={50} aria-valuemin={0} aria-valuemax={100}>
-              <div className="progress-bar bg-info" style={{ width: '80%' }}></div>
-            </div>
-            <label className={styles.label}>Javascript 70%</label>
-            <div className="progress" role="progressbar" aria-label="Warning example" aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
-              <div className="progress-bar bg-warning" style={{ width: '70%' }}></div>
-            </div>
-            <label className={styles.label}>PHP 60%</label>
-            <div className="progress" role="progressbar" aria-label="Success example" aria-valuenow={25} aria-valuemin={0} aria-valuemax={100}>
-              <div className="progress-bar bg-success" style={{ width: '60%' }}></div>
-            </div>
-            <label className={styles.label}>REACT 50%</label>
-            <div className="progress" role="progressbar" aria-label="Primary example" aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
-              <div className="progress-bar bg-primary" style={{ width: '50%' }}></div>
-            </div>
-            
-          </section>
-        </main>
+          <h3 className={styles.SousTitle}>Mes compétence</h3>
 
-        <footer>
-          <section>
+          <label className={styles.label}>HTML5 90%</label>
+          <div className="progress" role="progressbar" aria-label="Danger example" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100}>
+            <div className="progress-bar bg-danger marge-progess-bar" style={{ width: '90%' }}></div>
+          </div>
+          
+          <label className={styles.label}>CSS 80%</label>
+          <div className="progress" role="progressbar" aria-label="Info example" aria-valuenow={50} aria-valuemin={0} aria-valuemax={100}>
+            <div className="progress-bar bg-info" style={{ width: '80%' }}></div>
+          </div>
 
-          </section>
-        </footer>
-      </body>
+          <label className={styles.label}>Javascript 70%</label>
+          <div className="progress" role="progressbar" aria-label="Warning example" aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
+            <div className="progress-bar bg-warning" style={{ width: '70%' }}></div>
+          </div>
+
+          <label className={styles.label}>PHP 60%</label>
+          <div className="progress" role="progressbar" aria-label="Success example" aria-valuenow={25} aria-valuemin={0} aria-valuemax={100}>
+            <div className="progress-bar bg-success" style={{ width: '60%' }}></div>
+          </div>
+
+          <label className={styles.label}>REACT 50%</label>
+          <div className="progress" role="progressbar" aria-label="Primary example" aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
+            <div className="progress-bar bg-primary" style={{ width: '50%' }}></div>
+          </div>
+
+        </section>
+      </main>
+
+      <footer>
+        <section>
+
+        </section>
+      </footer>
     </>
   )
 }
