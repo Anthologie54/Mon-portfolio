@@ -22,25 +22,16 @@
 }
 
 .serviceCard {
+  height: auto;
+  min-height: 24rem;
+  padding: 1rem;
   width: 30rem;
   height: 25rem;
-  margin: 1rem;
   transition: all 0.3s ease-in-out;
 }
 
+/**** Effet de survol des Cards****/
 .serviceCard:hover {
   background-color: #efefef;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.cardGroup {
-  gap: 1rem;
-}
-.cardHover {
-  transition: all 0.3s ease;
-}
-
-.cardHover:hover {
-  background-color: #efefef;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }

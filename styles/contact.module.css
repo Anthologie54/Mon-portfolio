@@ -1,0 +1,53 @@
+.TitleService{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+}
+.DescriptionService{
+    display: flex;
+    justify-content: center;
+    color: black;
+    width: 100%;
+}
+.Service{
+    width: auto;
+    margin: 20px auto ;
+    padding: 20px;
+}
+.Trait {
+  border: none;
+  height: 8px;
+  background-color:  #0066fff1;
+  width: 20%;
+  margin: 20px auto;
+  opacity: 1;
+}
+.titleSecond{
+    color: black;
+    border-bottom: solid 4px #0066fff1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+.contact{
+    color: black;
+    padding: 0;
+    margin-bottom: 0;
+}
+.contact p {
+    display: flex;
+    margin: 0;
+}
+
+.contact strong{
+    font-size: large;
+}
+.bi{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    width: 80%;
+    margin: auto;
+}

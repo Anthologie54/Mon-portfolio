@@ -1,0 +1,21 @@
+.card{
+    margin: 24px;
+    width: 30rem;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.cardImgCustom{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/**** Effet de survol des Cards****/
+.card:hover {
+  background-color: #efefef;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}

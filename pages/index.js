@@ -33,7 +33,7 @@ export default function Home() {
           <h1> Bonjour je suis John Doe</h1>
           <h2>Développeur Web full stack</h2>
 
-          <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#githubModal" >En savoir plus</button>
+          <button type="button" className="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#githubModal" >En savoir plus</button>
         </div>
         {/* Modal GitHub */}
         <div className="modal fade" id="githubModal" tabIndex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
@@ -117,7 +117,7 @@ export default function Home() {
           <div className="progress" role="progressbar" aria-label="Danger example" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100}>
             <div className="progress-bar bg-danger marge-progess-bar" style={{ width: '90%' }}></div>
           </div>
-          
+
           <label className={styles.label}>CSS 80%</label>
           <div className="progress" role="progressbar" aria-label="Info example" aria-valuenow={50} aria-valuemin={0} aria-valuemax={100}>
             <div className="progress-bar bg-info" style={{ width: '80%' }}></div>
