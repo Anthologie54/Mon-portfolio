@@ -1,0 +1,37 @@
+.TitleService{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+}
+.DescriptionService{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.icone{
+    padding: 40px;
+}
+
+.Service{
+    border-bottom: solid 8px rgba(0, 89, 255, 0.973);
+    width: 19%;
+    margin: 50px auto ;
+    padding: 20px;
+}
+
+.serviceCard {
+  height: auto;
+  min-height: 24rem;
+  padding: 1rem;
+  width: 30rem;
+  height: 25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/**** Effet de survol des Cards****/
+.serviceCard:hover {
+  background-color: #efefef;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
