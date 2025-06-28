@@ -1,0 +1,11 @@
+.contact p {
+    display: flex;
+    margin: 0;
+}
+.contact i {
+    padding-right: 5px;
+}
+.contact strong {
+    margin-bottom: 10px;
+    font-size:x-large;
+}

@@ -1,4 +1,4 @@
-import Header from '../components/Header';
+import Header from '../components/Header.js';
 import styles from "../styles/portfolio.module.css";
 
 export default function Service() {
